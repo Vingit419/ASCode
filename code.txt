@@ -1,0 +1,18 @@
+package IO;
+import java.io.*;
+//wap to read data from file and storewhole data to character array
+public class storeDatatoCharArray {
+
+	public static void main(String[] args) throws Exception {
+		FileReader f=new FileReader("abc.txt");
+		char p[]=new char[20];
+		p[0]='a';
+		p[1]='s';
+		p[2]='h';
+		p[3]='u';
+		p[4]=' ';
+		f.read(p,5,10);
+System.out.println(p); 
+	}
+
+}
